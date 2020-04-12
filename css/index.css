@@ -197,3 +197,7 @@ footer .send-button {
   color: #fff;
   transform: translateY(-7px);
 }
+
+.footer {
+  text-align: center;
+}
