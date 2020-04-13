@@ -12,13 +12,6 @@ body {
   margin: auto;
 }
 
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-  padding: 0;
-}
 
 header nav h1,
 header .stone-head {
@@ -59,6 +52,10 @@ header nav .menu li a:hover {
 
 .stone-head {
   width: 100%;
+}
+
+.shop-head {
+  padding: 20px;
 }
 
 main .stone-shop {
@@ -129,32 +126,44 @@ main .buy-shop {
   margin-right: auto;
 }
 
+.head-contacts {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+}
+
 main .contact-us {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
-  align-items: center;
-  margin: 20px;
-}
-
-.head-contacts {
-  display: grid;
-  justify-self: center;
-  align-self: center;
-  font-size: 30px;
-}
-
-.first {
-  display: block;
   align-content: center;
-  block-size: 120px;
-  text-decoration: none;
-  list-style-type: none;
+}
+
+.contact-street {
+  display: grid;  
+}
+
+.contact-number {
+  display: grid;  
+}
+
+.facebook {
+  display: grid;
+  width: 30%;
+  margin: auto;
 }
 
 a {
   text-decoration: none;
   color: var(--main-color);
+}
+
+@media (max-width: 500px) {
+   main .contact-us {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 footer .holder  {
