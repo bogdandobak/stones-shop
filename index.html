@@ -1,118 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" href="img/stone-head.jpg" />
-    <title>Stone</title>
-    <link rel="stylesheet" href="css/index.css" />
-</head>
-
-<body>
-    <header id="home">
-        <nav>
-            <h1 class="logo">Stones</h1>
-            <ul class="menu">
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#shop">Shop</a>
-                </li>
-                <li>
-                    <a href="#contacts">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-        <img class="stone-head" src="img/stone-head.jpg" alt="stones" />
-    </header>
-    <main>
-                <section id="shop" class="shop">
-            <h2 class="shop-head">Shop</h2>
-        </section>
-        <section class="lists">
-            <div class="list-first">
-                <img class="stone-shop" src="img/stones-classic.jpg" alt="stones classic" />
-                <p>Classic stones</p>
-                <p>Price</p>
-                <button id="button-classic" class="buy-shop" name="buy">Buy</button>
-            </div>
-            <div class="list-second">
-                <img class="stone-shop" src="img/stones-antistress.jpg" alt="stones antistress" />
-                <p>Antistress stones</p>
-                <p>Price</p>
-                <button id="button-anti" class="buy-shop" name="buy">Buy</button>
-            </div>
-            <div class="list-third">
-                <img class="stone-shop" src="img/stones-whiskey.jpg" alt="stones whiskey" />
-                <p>Whiskey stones</p>
-                <p>Price</p>
-                <button id="button-whiskey" class="buy-shop" name="buy">Buy</button>
-            </div>
-            <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <h1>Shop</h1>
-            <form action="https://formspree.io/myypvbpv" method="POST">
-            <lable for="name"><b>Your name:</b>
-                <input class="text" type="text" placeholder="Your name" name="name" required>
-            </lable>
-            <label for="email"><b>Your email:</b>
-                <input class="email" type="email" placeholder="Your email" name="email" required>
-            </label>
-            <label for="phone"><b>Contact number:</b>
-            <input class="phone" type="tel" placeholder="Your number" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
-            </label>
-            <lable for="notes"><b>Your notes:</b>
-            <textarea class="notes" rows="3" cols="50" name="notes" placeholder="Your notes"></textarea>
-            </lable>
-            <label>
-                <input class="form-send" type="submit" value="Send">
-            </label>
-            </form>
-        </div>
-    </div>
-
-
-           
-        </section>
-            
-        <section>
-            <h3 class="head-contacts">Contacts</h3>
-        </section>
-        <section id="contacts" class="contact-us">
-            <p class="contact-street"><b>Location :</b> Lviv,Stones st.,5</p>
-            <p class="contact-number"><b>Contact us :</b> +38094521452</p>
-            <a href="https://www.facebook.com/profile.php?id=100022042130942">
-                <img class="facebook" src="img/first.png" alt="facebook icon" />
-                <p>facebook link</p>
-            </a>
-        </section>
-    </main>
-    <footer>
-        <form class="holder" action="https://formspree.io/myypvbpv" method="POST">
-            <label class="holder">
-                Your name:
-                <input class="holder" type="text" placeholder="Your name" required />
-            </label>
-            <label class="holder">
-                Email Address:
-                <input class="holder" type="email" placeholder="Email Address" required />
-            </label>
-            <label class="holder">
-                Your message:
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <link rel="icon" href="img/stone-head.jpg"/>
+        <title>Stone</title>
+        <link rel="stylesheet" href="css/index.css"/>
+    </head>
+    <body>
+        <header id="home">
+            <nav>
+                <h1 class="logo">Stones</h1>
+                <ul class="menu">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#shop">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <img class="stone-head" src="img/stone-head.jpg" alt="stones"/>
+        </header>
+        <main>
+            <section id="shop" class="shop">
+                <h2 class="shop-head">Shop</h2>
+            </section>
+            <section class="lists">
+                <div class="list-first">
+                    <img class="stone-shop" src="img/stones-classic.jpg" alt="stones classic"/>
+                    <p>Classic stones</p>
+                    <p>Price</p>
+                    <button id="button-classic" class="buy-shop" name="buy">Buy</button>
+                </div>
+                <div class="list-second">
+                    <img class="stone-shop" src="img/stones-antistress.jpg" alt="stones antistress"/>
+                    <p>Antistress stones</p>
+                    <p>Price</p>
+                    <button id="button-anti" class="buy-shop" name="buy">Buy</button>
+                </div>
+                <div class="list-third">
+                    <img class="stone-shop" src="img/stones-whiskey.jpg" alt="stones whiskey"/>
+                    <p>Whiskey stones</p>
+                    <p>Price</p>
+                    <button id="button-whiskey" class="buy-shop" name="buy">Buy</button>
+                </div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <h1>Shop</h1>
+                        <form action="https://formspree.io/myypvbpv" method="POST">
+                            <lable for="name">
+                                <b>Your name:</b>
+                                <input class="text" type="text" placeholder="Your name" name="name" required>
+                            </lable>
+                            <label for="email">
+                                <b>Your email:</b>
+                                <input class="email" type="email" placeholder="Your email" name="email" required>
+                            </label>
+                            <label for="phone">
+                                <b>Contact number:</b>
+                                <input class="phone" type="tel" placeholder="Your number" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                            </label>
+                            <lable for="notes">
+                                <b>Your notes:</b>
+                                <textarea class="notes" rows="3" cols="50" name="notes" placeholder="Your notes"></textarea>
+                            </lable>
+                            <label>
+                                <input class="form-send" type="submit" value="Send">
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3 class="head-contacts">Contacts</h3>
+            </section>
+            <section id="contacts" class="contact-us">
+                <p class="contact-street">
+                    <b>Location :</b>
+                    Lviv,Stones st.,5
+                </p>
+                <p class="contact-number">
+                    <b>Contact us :</b>
+                    +38094521452
+                </p>
+                <a href="https://www.facebook.com/profile.php?id=100022042130942">
+                    <img class="facebook" src="img/first.png" alt="facebook icon"/>
+                    <p>facebook link</p>
+                </a>
+            </section>
+        </main>
+        <footer>
+            <form class="holder" action="https://formspree.io/myypvbpv" method="POST">
+                <label class="holder">
+                    Your name:
+                <input class="holder" type="text" placeholder="Your name" required/>
+                </label>
+                <label class="holder">
+                    Email Address:
+                <input class="holder" type="email" placeholder="Email Address" required/>
+                </label>
+                <label class="holder">
+                    Your message:
                 <textarea class="holder" rows="3" cols="50" name="text" placeholder="Your message" required></textarea>
-            </label>
-            <input class="send-button" type="submit" value="Send" />
-        </form>
-        <section>
-            <hr />
-            <p class="footer">Powered by Grass</p>
-        </section>
-    </footer>
-    <script src="js/index.js"></script>
-</body>
-
+                </label>
+                <input class="send-button" type="submit" value="Send"/>
+            </form>
+            <section>
+                <hr/>
+                <p class="footer">Powered by Grass</p>
+            </section>
+        </footer>
+        <script src="js/index.js"></script>
+    </body>
 </html>
