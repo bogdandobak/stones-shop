@@ -1,12 +1,33 @@
-document.querySelector('.buy-shop').addEventListener('click', getAjaxHtml);
+// Get the modal
+const modal = document.getElementById('myModal');
 
-function getAjaxHtml() {
-  const xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      document.querySelector('.container').innerHTML = xhr.responseText;
-    }
-  };
-  xhr.open('get', 'form.html', true);
-  xhr.send();
-}
+
+const buttonClassic = document.getElementById('button-classic');
+const buttonAnti = document.getElementById('button-anti');
+const buttonWhiskey = document.getElementById('button-whiskey');
+
+
+const span = document.getElementsByClassName('close-button')[0];
+
+
+buttonClassic.onclick = function () {
+  modal.style.display = 'block';
+};
+buttonAnti.onclick = function () {
+  modal.style.display = 'block';
+};
+buttonWhiskey.onclick = function () {
+  modal.style.display = 'block';
+};
+
+
+span.onclick = function () {
+  modal.style.display = 'none';
+};
+
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+};
