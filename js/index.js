@@ -1,8 +1,8 @@
-const modal = document.getElementById('modalShop');
+const modal = document.querySelector('.modal');
 
-const buttonClassic = document.getElementById('button-classic');
-const buttonAnti = document.getElementById('button-anti');
-const buttonWhiskey = document.getElementById('button-whiskey');
+const buttonClassic = document.querySelector('.button-classic');
+const buttonAnti = document.querySelector('.button-anti');
+const buttonWhiskey = document.querySelector('.button-whiskey');
 
 const span = document.getElementsByClassName('close-button')[0];
 
