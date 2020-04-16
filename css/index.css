@@ -129,18 +129,21 @@ main .button-classic,
   margin-right: auto;
 }
 
-.head-contacts {
-  display: block;
-  text-align: center;
-  font-size: 30px;
-  padding: 10px;
-}
+
 
 main .contact-us {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   justify-content: center;
   align-content: center;
+}
+
+.head-contacts {
+  display: grid;
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 30px;
 }
 
 .contact-street {
@@ -233,7 +236,10 @@ footer .send-button, .form-send {
   width: 30%;
   justify-items: center;
   align-items: center;
-  text-align: start;
+}
+
+.close-button {
+  justify-self: start;
 }
 
 .text {
