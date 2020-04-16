@@ -245,22 +245,22 @@ footer .send-button, .form-send {
 
 .text {
   display: grid;
-  grid-template-columns: span -1;
+  grid-column: span -1;
 }
 
 .email {
   display: grid;
-  grid-template-columns: span -1;
+  grid-column: span -1;
 }
 
 .phone {
   display: grid;
-  grid-template-columns: span -1;
+  grid-column: span -1;
 }
 
 .notes {
   display: grid;
-  grid-template-columns: span -1;
+  grid-column: span -1;
   max-width: 200px;
 }
 
