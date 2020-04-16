@@ -53,22 +53,22 @@
                     <div class="modal-content">
                         <span class="close-button">&times;</span>
                         <h3 class="modal-header">Shop</h3>
-                        <form action="https://formspree.io/myypvbpv" method="POST">
-                            <lable for="clientName">
+                        <form class="modal-form" action="https://formspree.io/myypvbpv" method="POST">
+                            <lable class="modal-form" for="name">
                                 <b>Your name:</b>
-                                <input  class="text" type="text" placeholder="Your name" name="name" required>
+                                <input id="name"  class="text" type="text" placeholder="Your name" name="name" required>
                             </lable>
-                            <label for="email">
+                            <label class="modal-form" for="email">
                                 <b>Your email:</b>
-                                <input  class="email" type="email" placeholder="Your email" name="email" required>
+                                <input id="email" class="email" type="email" placeholder="Your email" name="email" required>
                             </label>
-                            <label for="phone">
+                            <label class="modal-form" for="phone">
                                 <b>Contact number:</b>
-                                <input  class="phone" type="tel" placeholder="Your number" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="0932648506" required>
+                                <input id="phone" class="phone" type="tel" placeholder="Your number" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="0932648506" required>
                             </label>
-                            <lable for="clientNotes">
+                            <lable class="modal-form" for="notes">
                                 <b>Your notes:</b>
-                                <textarea class="notes" rows="3" cols="50" name="notes" placeholder="Your notes"></textarea>
+                                <textarea id="notes" class="notes" rows="3" cols="50" name="notes" placeholder="Your notes"></textarea>
                             </lable>
                             <label>
                                 <input class="form-send" type="submit" value="Send">
