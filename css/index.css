@@ -202,6 +202,7 @@ footer .send-button, .form-send {
   outline: none;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
 }
 
 .button:hover {
